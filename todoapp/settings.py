@@ -52,7 +52,15 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+#Production DB settings DATABASES = 
+{ 'default': 
+  { 'ENGINE': 'django.db.backends.mysql', 
+    'NAME': 'adilshehzad$dbname', 
+    'USER': 'adilshehzad', 
+    'PASSWORD': 'dbpassword',
+    'HOST': 'adilshehzad.mysql.pythonanywhere-services.com',
+  } 
+}
 ROOT_URLCONF = 'todoapp.urls'
 
 TEMPLATES = [
